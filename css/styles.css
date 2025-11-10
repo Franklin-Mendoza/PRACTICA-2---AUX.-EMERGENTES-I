@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a2a3a, #2c3e50);
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 300px;
+}
+
+.datos {
+    background: rgba(0, 255, 255, 0.1);
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #00ffff;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+.datos h2 {
+    color: #00ffff;
+    font-size: 15px;
+    margin-bottom: 4px;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+}
+
+.datos p {
+    color: #a0e7e7;
+    font-size: 11px;
+    margin: 3px 0;
+    text-align: left;
+}
+
+.calculator {
+    background-color: #1e2936;
+    border-radius: 15px;
+    padding: 18px;
+    border: 2px solid #00ffff;
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.3);
+}
+
+.display {
+    background-color: #0f1419;
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: right;
+    padding: 18px 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    min-height: 65px;
+    border: 2px solid #00ffff;
+    box-shadow: inset 0 0 20px rgba(0, 255, 255, 0.2), 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+button {
+    background-color: #1e2936;
+    color: #ffffff;
+    border: 2px solid #00ffff;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    height: 55px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: #2a3f52;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.operator:hover, .equals:hover, .clear:hover, .backspace:hover {
+    background-color: #00ffff;
+    color: #0f1419;
+}
+
+.zero {
+    grid-column: span 2;
+}
